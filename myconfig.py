@@ -7,10 +7,10 @@ import multiprocessing
 # Paths of downloaded LibriSpeech datasets.
 TRAIN_DATA_DIR = os.path.join(
     os.path.expanduser("~"),
-    "F:/文件/天津大学/实验室/声纹课程/SpeakerRecognitionFromScratch-main/data/LibriSpeech/train-clean-100")
+    "E:/天津大学/实验室/声纹识别/data/LibriSpeech/train-clean-100")
 TEST_DATA_DIR = os.path.join(
     os.path.expanduser("~"),
-    "F:/文件/天津大学/实验室/声纹课程/SpeakerRecognitionFromScratch-main/data/LibriSpeech/test-clean")
+    "E:/天津大学/实验室/声纹识别/data/LibriSpeech/test-clean")
 
 # Paths of CSV files where the first column is speaker, and the second column is
 # utterance file.
@@ -22,7 +22,7 @@ TEST_DATA_CSV = ""
 # Path of save model.
 SAVED_MODEL_PATH = os.path.join(
     os.path.expanduser("~"),
-    "F:/文件/天津大学/实验室/声纹课程/SpeakerRecognitionFromScratch-main/saved_model/saved_model.pt")
+    "E:/天津大学/实验室/声纹识别/SpeakerRecognitionFromScratch-main_v2_lstm_transformer/SpeakerRecognitionFromScratch-main/saved_model/saved_model.pt")
 
 # Number of MFCCs for librosa.feature.mfcc.
 N_MFCC = 40
@@ -41,7 +41,9 @@ BI_LSTM = True
 FRAME_AGGREGATION_MEAN = True
 
 # If true, we use transformer instead of LSTM.
-USE_TRANSFORMER = True
+USE_TRANSFORMER = False
+
+USE_TDNN = True
 
 # Dimension of transformer layers.
 TRANSFORMER_DIM = 32
