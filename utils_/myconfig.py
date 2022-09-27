@@ -67,10 +67,10 @@ BATCH_SIZE = 8
 LEARNING_RATE = 0.0001
 
 # Save a model to disk every these many steps.
-SAVE_MODEL_FREQUENCY = 1
+SAVE_MODEL_FREQUENCY = 10000
 
 # Number of steps to train.
-TRAINING_STEPS = 10
+TRAINING_STEPS = 100000
 
 # Whether we are going to train with SpecAugment.
 SPECAUG_TRAINING = False
