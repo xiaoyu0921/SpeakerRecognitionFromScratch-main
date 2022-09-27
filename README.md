@@ -5,6 +5,7 @@
 * 作者：xiaoyu
 * 借鉴代码：语言之家，声纹识别工程实践课程大作业代码
 * 修改内容：添加了TDNN模型，修改了文件结构
+* 后续改进：
 
 
 ### Understand the file structure
