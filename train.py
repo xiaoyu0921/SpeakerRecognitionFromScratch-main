@@ -2,7 +2,6 @@ import time
 import torch.optim as optim
 import matplotlib.pyplot as plt
 import multiprocessing
-import datasets
 from data_prepare import feature_extraction
 from datasets import dataset
 from model.x_vector import X_vector_Encoder
