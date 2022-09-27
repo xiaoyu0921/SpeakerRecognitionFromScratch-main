@@ -3,10 +3,10 @@ import numpy as np
 import multiprocessing
 import time
 
-import dataset
-import feature_extraction
-import neural_net
-import myconfig
+import datasets
+from data_prepare import feature_extraction
+import train
+from utils_ import myconfig
 
 
 def run_inference(features, encoder,
@@ -116,18 +116,18 @@ def run_eval():
     """Run evaluation of the saved model on test data."""
     start_time = time.time()
 
-    # 数据读取
+    # 数据读取，获取说话人数据三元组
     if myconfig.TEST_DATA_CSV:
-        spk_to_utts = dataset.get_csv_spk_to_utts(
+        spk_to_utts = datasets.get_csv_spk_to_utts(
             myconfig.TEST_DATA_CSV)
         print("Evaluation data:", myconfig.TEST_DATA_CSV)
     else:
-        spk_to_utts = dataset.get_librispeech_spk_to_utts(
+        spk_to_utts = datasets.get_librispeech_spk_to_utts(
             myconfig.TEST_DATA_DIR)
         print("Evaluation data:", myconfig.TEST_DATA_DIR)
 
     # 获取网络模型
-    encoder = neural_net.get_speaker_encoder(
+    encoder = train.get_speaker_encoder(
         myconfig.SAVED_MODEL_PATH)
 
     # 指定测试三元组的数量NUM_EVAL_TRIPLETS，计算labels和scores
