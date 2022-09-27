@@ -2,35 +2,10 @@
 
 ## Overview
 
-This is the reference code for the final project of the Speaker Recognition course on [Udemy](https://www.udemy.com/course/speaker-recognition/?referralCode=1914766AF241CE15D19A), [机器之心](https://jmq.xet.tech/s/4j70ZU), [深蓝学院](https://www.shenlanxueyuan.com/course/513) and [语音之家](https://appzxw56sw27444.h5.xiaoeknow.com/v1/goods/goods_detail/course_2CvsdnvhxVu65E81X2TcMFlXKWQ).
+作者：xiaoyu
+借鉴代码：语言之家，声纹识别工程实践课程大作业代码
+修改内容：添加了TDNN模型，修改了文件结构
 
-[![image](resources/course_screenshot.png)](https://www.udemy.com/course/speaker-recognition/?referralCode=1914766AF241CE15D19A)
-
-In this project, we will build an LSTM-based or Transformer-based speaker recognition system from scratch.
-
-We will train the neural network on [LibriSpeech](https://www.openslr.org/12), and evaluate the Equal Error Rate (EER).
-
-The system is built on top of [PyTorch](https://pytorch.org/tutorials/) and [librosa](https://librosa.org/doc/latest/index.html) - we have already learned both in the course.
-
-## Disclaimers
-
-The purpose of this project is to build a **minimal working system** using simple Python code, to help students learn the basic concepts. Many details have been largely simplified to make the code easier to understand.
-
-* We are NOT trying to build a state-of-the-art system.
-* We are NOT trying to use best software engineering practice.
-* We will NOT make use of many advanced library or features that are frequently used in academia and industry.
-
-## How to use
-
-### Try building your own system first
-
-**If you just started this project, please STOP here!**
-
-The lectures and practices in the [course](https://www.udemy.com/course/speaker-recognition/?referralCode=1914766AF241CE15D19A) already covered all the necessary knowledge and skills for you to build your own speaker recognition system from scratch.
-
-So, before you dive into this library, you should try to build your own speaker recognition system first. If you are stuck, go back to the lectures, coding exercises, and assignments, to see what is missing. This may take long, and you may struggle at the beginning. But believe me, this process will really help you master what you have learned in this course.
-
-If you are still clueless after trying hard, then don't worry, this library serves as a template for you to get started. You can read this library first as a reference, then build your own system from scratch. You can also use this library as a starting point, and implement alternative algorithms - in the final project, we will list a few ideas for you to try.
 
 ### Understand the file structure
 
